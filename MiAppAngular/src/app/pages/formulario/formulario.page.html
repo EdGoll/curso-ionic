@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Usuario:</ion-label>
+    <ion-input type="text" placeholder="Nombre del Usuario"  [(ngModel)]="txtUsuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Contraseña:</ion-label>
+      <ion-input type="password" placeholder="Contraseña del Usuario"  [(ngModel)]="txtClave"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>E-Mail:</ion-label>
+      <ion-input type="text" placeholder="Correo del Usuario"  [(ngModel)]="txtCorreo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Edad:</ion-label>
+      <ion-input type="numeric" placeholder="Edad del Usuario"  [(ngModel)]="txtEdad"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Telefono:</ion-label>
+      <ion-input type="numeric" placeholder="Telefono del Usuario"  [(ngModel)]="txtTelefono"></ion-input>
+  </ion-item>
+
+  <ion-button  name="Enviar" (click)="funActualizar()">Enviar</ion-button>
+
+  <ion-item>
+      <ion-input tupe="message" [(ngModel)]="msg"></ion-input>
+  </ion-item>
+  
+</ion-content>
