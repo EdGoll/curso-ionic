@@ -5,13 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FormularioPage } from './formulario.page';
-import { ComponentsModule } from 'src/app/components/components.module';
+import { SnaPage } from './sna.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: FormularioPage
+    component: SnaPage
   }
 ];
 
@@ -22,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FormularioPage]
+  declarations: [SnaPage]
 })
-export class FormularioPageModule {}
+export class SnaPageModule {}

@@ -23,6 +23,10 @@ const routes: Routes = [
     {
       path: 'formulario',
       loadChildren: '../formulario/formulario.module#FormularioPageModule'
+    },
+    {
+      path: 'sna',
+      loadChildren: '../sna/sna.module#SnaPageModule'
     }
   ]
   }
