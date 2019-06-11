@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionSheetPage } from '../action-sheet/action-sheet.page';
 
 @Component({
   selector: 'app-tabs-layout',
@@ -12,4 +13,7 @@ export class TabsLayoutPage implements OnInit {
   ngOnInit() {
   }
 
+  muestraHojaAccion(){
+    
+  }
 }

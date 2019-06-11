@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'about', loadChildren: './pages/about/about.module#AboutPageModule' },
   { path: 'contacs', loadChildren: './pages/contacs/contacs.module#ContacsPageModule' },
   { path: 'sna', loadChildren: './pages/sna/sna.module#SnaPageModule' },
+  { path: 'action-sheet', loadChildren: './pages/action-sheet/action-sheet.module#ActionSheetPageModule' },
+  { path: 'alerts', loadChildren: './pages/alerts/alerts.module#AlertsPageModule' },
 ];
 
 @NgModule({

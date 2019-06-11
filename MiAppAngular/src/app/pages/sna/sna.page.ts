@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnaPage implements OnInit {
 
-  constructor() { }
+  image: String;
+
+  constructor() { 
+    this.image = 'https://portalportuario.cl/wp-content/uploads/2015/05/aduanas02-300x198.jpg';
+  }
 
   ngOnInit() {
   }

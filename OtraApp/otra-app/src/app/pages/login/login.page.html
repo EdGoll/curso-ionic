@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>      
+      <ion-card-title>Gobierno de Chile</ion-card-title>
+      <ion-card-subtitle>Servicio Nacional de Aduanas</ion-card-subtitle>
+    </ion-card-header>
+
+
+  </ion-card>
+  
+
+  <ion-card>
+      <ion-card-header>      
+          <ion-card-title>Login</ion-card-title>
+        </ion-card-header>
+    <ion-item>
+      <ion-img  width="192" height="90" src="assets/fotoaduana.jpg"></ion-img>
+    </ion-item>
+    <ion-item>
+      <ion-label>Usuario:</ion-label>
+      <ion-input type="text" placeholder="Nombre del Usuario"  [(ngModel)]="txtUsuario" name="txtUsuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Contraseña:</ion-label>
+        <ion-input type="password" placeholder="Contraseña del Usuario"  [(ngModel)]="txtClave" name="txtClave"></ion-input>
+    </ion-item>
+
+    
+        <ion-button  expand="full" (click)="validaUsuario()">Ingresar</ion-button>
+
+  </ion-card>
+
+
+</ion-content>
