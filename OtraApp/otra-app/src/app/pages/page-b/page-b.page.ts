@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from '../../services/datos.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-page-b',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageBPage implements OnInit {
 
-  constructor() { }
+  public namePage = 'Page-B';
+
+  usuarios : Observable<any>;
+
+  constructor(private lectura: DatosService) { }
 
   ngOnInit() {
+    this.usuarios = this.lectura.getAll();
   }
 
 }
