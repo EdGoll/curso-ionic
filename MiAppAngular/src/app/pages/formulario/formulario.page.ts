@@ -14,7 +14,7 @@ export class FormularioPage implements OnInit {
 
   public msg :String;
 
-  txtUsuario = '';
+  txtUsuario  
   txtClave = '';
   txtCorreo = '';
   txtEdad = '';

@@ -1,0 +1,38 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>pageA</ion-title>
+    <ion-buttons slot="start"> 
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<app-header [name]="namePage"></app-header>
+<ion-content>
+    
+  <!-- <ion-list>
+    <ion-item>
+      <ion-label>
+        <h3>YeiSon</h3>
+        <p>Este es su nombre</p>
+      </ion-label>
+      <ion-label text-rigth>
+        123123123
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-list>
+      <ion-item *ngFor="let item of usuarios | async">
+        <ion-label>
+          <h3>{{item.name}}</h3>
+          <p>{{item.phone}}</p>
+        </ion-label>
+        <ion-label text-rigth>
+            {{item.email}}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+</ion-content>
+

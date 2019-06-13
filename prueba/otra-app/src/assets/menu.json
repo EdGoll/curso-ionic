@@ -1,0 +1,22 @@
+[
+    {
+      "icon": "reorder",
+      "name": "Tabla 1",
+      "redirectTo": "/page-a"
+      },
+    {
+      "icon": "reorder",
+      "name": "Tabla 2",
+      "redirectTo": "/page-b"
+      },
+    {
+      "icon": "reorder",
+      "name": "Tabla 3",
+      "redirectTo": "/page-c"
+      },
+    {
+      "icon": "contacts",
+      "name": "Salir",
+      "redirectTo": "/login"
+      }
+  ]

@@ -1,0 +1,40 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>pageB</ion-title>
+    <ion-buttons slot="start"> 
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<app-header [name]="namePage"></app-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item *ngFor="let item of usuarios | async">
+          <ion-label>
+            <h3>{{item.userId}}</h3>
+            <p>{{item.completed}}</p>
+          </ion-label>
+          <ion-label text-rigth>
+              {{item.title}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <!-- <ion-list>
+      <ion-item *ngFor="let item of usuarios | async">
+      <ion-card expanded="full" width="100%">
+          <ion-card-header>      
+            <ion-card-title>{{item.userId}}</ion-card-title>
+            <ion-card-subtitle>{{item.completed}}</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+              {{item.title}}
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list> -->
+</ion-content>
